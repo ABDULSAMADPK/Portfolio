@@ -31,7 +31,7 @@ export default function Education() {
   };
 
   return (
-    <section id="education" className="py-24 bg-bgDark border-t border-white/5 relative">
+    <section id="education" className="py-16 md:py-24 bg-bgDark border-t border-white/5 relative overflow-hidden">
       {/* Decorative Glow */}
       <div className="absolute bottom-10 right-1/4 w-80 h-80 rounded-full bg-secondary/5 blur-[120px] pointer-events-none" />
 

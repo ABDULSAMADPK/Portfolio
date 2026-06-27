@@ -53,8 +53,8 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top: 0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "glass-nav py-4 shadow-lg shadow-black/10" : "bg-transparent py-6"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled || isOpen ? "glass-nav py-4 shadow-lg shadow-black/10" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -108,7 +108,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-t border-white/5 overflow-hidden"
+            className="absolute top-full left-0 w-full md:hidden glass border-t border-b border-white/5 overflow-hidden"
           >
             <div className="px-6 py-4 flex flex-col space-y-4">
               {navLinks.map(link => {
@@ -119,8 +119,8 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`text-lg font-medium py-2 border-b border-white/5 transition-colors duration-300 hover:text-primary ${
-                      isActive ? "text-primary pl-2 border-l-2 border-l-primary" : "text-slate-400"
+                    className={`text-lg font-medium py-2 pl-2 border-l-2 border-b border-white/5 transition-colors duration-300 hover:text-primary ${
+                      isActive ? "text-primary border-l-primary" : "text-slate-400 border-l-transparent"
                     }`}
                   >
                     {link.name}

@@ -43,7 +43,7 @@ export default function Certifications() {
   };
 
   return (
-    <section id="certifications" className="py-24 bg-bgDark border-t border-white/5 relative">
+    <section id="certifications" className="py-16 md:py-24 bg-bgDark border-t border-white/5 relative overflow-hidden">
       {/* Decorative Glow */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 

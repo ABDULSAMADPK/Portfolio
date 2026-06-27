@@ -45,7 +45,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-24 bg-bgDark border-t border-white/5 relative">
+    <section id="about" className="py-16 md:py-24 bg-bgDark border-t border-white/5 relative overflow-hidden">
       {/* Decorative Blur Backdrops */}
       <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-secondary/5 blur-[120px] pointer-events-none" />
 
@@ -79,7 +79,7 @@ export default function About() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-5 flex justify-center"
           >
-            <div className="relative group max-w-sm">
+            <div className="relative group w-full max-w-[280px] sm:max-w-sm">
               {/* Outer Glowing Border Effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-secondary to-primary rounded-3xl blur-md opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
               

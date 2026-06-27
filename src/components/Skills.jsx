@@ -40,7 +40,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-24 bg-bgDark border-t border-white/5 relative">
+    <section id="skills" className="py-16 md:py-24 bg-bgDark border-t border-white/5 relative overflow-hidden">
       {/* Decorative Blur Backdrops */}
       <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 

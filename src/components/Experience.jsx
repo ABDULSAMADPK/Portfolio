@@ -31,7 +31,7 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" className="py-24 bg-bgDark border-t border-white/5 relative">
+    <section id="experience" className="py-16 md:py-24 bg-bgDark border-t border-white/5 relative overflow-hidden">
       {/* Background Decorative Glow */}
       <div className="absolute top-1/4 right-1/10 w-96 h-96 rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 

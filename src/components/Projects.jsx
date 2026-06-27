@@ -23,7 +23,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 bg-bgDark border-t border-white/5 relative">
+    <section id="projects" className="py-16 md:py-24 bg-bgDark border-t border-white/5 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute bottom-1/4 right-1/10 w-96 h-96 rounded-full bg-secondary/5 blur-[120px] pointer-events-none" />
 

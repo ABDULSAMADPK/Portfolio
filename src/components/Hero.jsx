@@ -183,7 +183,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-height-screen flex items-center justify-center pt-24 pb-12 overflow-hidden bg-bgDark bg-grid-pattern">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-28 pb-16 md:py-24 overflow-hidden bg-bgDark bg-grid-pattern">
       {/* Interactive Mesh Background */}
       <canvas ref={canvasRef} className="absolute inset-0 z-0 pointer-events-none" />
       
@@ -300,7 +300,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-[30px] opacity-35 animate-pulse" />
             
             {/* Main Circle Frame with profile picture */}
-            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-[6px] bg-gradient-to-tr from-primary via-slate-800 to-secondary shadow-2xl overflow-hidden group">
+            <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full p-[6px] bg-gradient-to-tr from-primary via-slate-800 to-secondary shadow-2xl overflow-hidden group">
               <div className="w-full h-full rounded-full bg-bgDark overflow-hidden relative flex items-center justify-center">
                 {/* Visual Glassmorphic Grid Overlay */}
                 <div className="absolute inset-0 bg-grid-pattern opacity-10 group-hover:scale-105 transition-transform duration-500" />
@@ -324,7 +324,7 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute -top-4 -left-4 glass px-4 py-2.5 rounded-2xl flex items-center gap-2 border border-white/10 shadow-lg"
+              className="absolute -top-4 -left-4 glass px-4 py-2.5 rounded-2xl hidden sm:flex items-center gap-2 border border-white/10 shadow-lg"
             >
               <div className="w-3 h-3 rounded-full bg-primary animate-ping" />
               <span className="text-xs font-semibold text-slate-200 tracking-wider">AI ENGINEER</span>
@@ -333,7 +333,7 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1 }}
-              className="absolute -bottom-4 -right-4 glass px-4 py-2.5 rounded-2xl flex items-center gap-2 border border-white/10 shadow-lg"
+              className="absolute -bottom-4 -right-4 glass px-4 py-2.5 rounded-2xl hidden sm:flex items-center gap-2 border border-white/10 shadow-lg"
             >
               <div className="w-3 h-3 rounded-full bg-secondary animate-pulse" />
               <span className="text-xs font-semibold text-slate-200 tracking-wider">DATA ANALYST</span>

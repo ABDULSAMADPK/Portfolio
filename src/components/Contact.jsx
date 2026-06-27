@@ -76,7 +76,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-bgDark border-t border-white/5 relative">
+    <section id="contact" className="py-16 md:py-24 bg-bgDark border-t border-white/5 relative overflow-hidden">
       {/* Decorative Glow */}
       <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 
@@ -121,7 +121,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Email Address</p>
-                    <p className="text-sm md:text-base font-semibold text-slate-300 group-hover:text-primary transition-colors duration-300">{email}</p>
+                    <p className="text-sm md:text-base font-semibold text-slate-300 group-hover:text-primary transition-colors duration-300 break-all">{email}</p>
                   </div>
                 </a>
 
@@ -135,7 +135,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Phone Number</p>
-                    <p className="text-sm md:text-base font-semibold text-slate-300 group-hover:text-secondary transition-colors duration-300">{phone}</p>
+                    <p className="text-sm md:text-base font-semibold text-slate-300 group-hover:text-secondary transition-colors duration-300 break-all">{phone}</p>
                   </div>
                 </a>
               </div>
